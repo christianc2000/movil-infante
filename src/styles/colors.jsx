@@ -5,11 +5,16 @@ export default {
     GRAY: '#dfdce3',
     GRAYPRIMARY: '#3f3f3f',
     GRAYSECONDARY: '#707070',
+    GRAYTEXTHEAVY: '#808080',
+    GRAYTEXTLIGHT: '#cccccc',
+    GRAYTEXTLIGHT2: "#666666",
     YELLOW1: '#f7b733',
     YELLOW2: '#FFDF6C',
     BLUE1: '#455a64',
     ORANGE: '#fc4a1a',
     ORANGE1: '#ffcc80',
     ORANGE2: '#ff5204',
-    GREEN1: '#4abdac'
+    ORANGE3: '#F77333',
+    GREEN1: '#4abdac',
+    GREENVIVO: '#95CC29'
 };

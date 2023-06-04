@@ -1,9 +1,8 @@
 import { StyleSheet } from 'react-native';
-import color from './colors';
 
 //Estilos para MainScreen
 const mainStyles = StyleSheet.create({
-
+   
     container: {
         //flex: 1,
         alignItems: 'center',
