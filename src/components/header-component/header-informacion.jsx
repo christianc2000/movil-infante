@@ -1,13 +1,15 @@
 import React from 'react';
 import { TouchableOpacity, Image, Text, StyleSheet, View } from 'react-native';
 
-const HeaderInformacion = ({ iconSource, text }) => {
-
+const HeaderInformacion = ({ iconSource, text, navigation}) => {
+  const handlePress = () => {
+      navigation.navigate('Inicio');
+  };
   return (
     <View style={styles.container}>
       <View style={styles.containerFila}>
         <Text style={styles.text}>{text}</Text>
-        <TouchableOpacity style={styles.containerIcono} onPress={() => console.log('boton inicio')}>
+        <TouchableOpacity style={styles.containerIcono} onPress={handlePress}>
           <Image source={iconSource} style={styles.icon} resizeMode="contain" />
         </TouchableOpacity>
       </View>

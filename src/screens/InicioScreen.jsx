@@ -4,7 +4,7 @@ import Card from "../components/card";
 import Opciones from "../components/opcionHorizontal";
 import colors from "../styles/colors";
 
-const InicioScreen = () => {
+const InicioScreen = ({ navigation }) => {
     return (
         <View style={styles.mainContainer}>
             <View style={styles.container}>
@@ -22,8 +22,8 @@ const InicioScreen = () => {
                 </View>
                 <Text style={[styles.text, { fontWeight: '900' }]}>INFORMACION</Text>
                 <View style={[styles.containerF, { height: 100 }]}>
-                    <Card iconSource={require('../imagenes/informacion/Marcador2.png')} text="Tracking" id='tracking' />
-                    <Card iconSource={require('../imagenes/informacion/Contacto4.png')} text="Contacto" id='contacto' />
+                    <Card iconSource={require('../imagenes/informacion/Marcador2.png')} text="Tracking" id='tracking' name="tracking" navigation={navigation}/>
+                    <Card iconSource={require('../imagenes/informacion/Contacto4.png')} text="Contacto" id='contacto' name="contacto" navigation={navigation} />
                 </View>
             </View>
             <View style={styles.containerHeader}>

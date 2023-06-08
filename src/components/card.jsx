@@ -1,9 +1,17 @@
 import React from 'react';
 import { TouchableOpacity, Image, Text, StyleSheet } from 'react-native';
 
-const Card = ({ iconSource, text, id }) => {
+const Card = ({ iconSource, text, name, navigation }) => {
+  const handlePress = () => {
+    if (name === 'contacto') {
+      navigation.navigate('Contacto');
+    } else if (name === 'tracking') {
+      navigation.navigate('Tracking');
+    }
+  };
+
   return (
-    <TouchableOpacity style={styles.container} onPress={() => console.log('Botón ' + id + ' presionado')}>
+    <TouchableOpacity style={styles.container} onPress={handlePress}>
       <Image source={iconSource} style={styles.icon} resizeMode="contain" />
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>

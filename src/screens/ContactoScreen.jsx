@@ -6,7 +6,7 @@ import ContactosLlamada from "../components/Scroll/scrollContactollamadas";
 import colors from "../styles/colors";
 
 
-const ContactoScreen = () => {
+const ContactoScreen = ({navigation}) => {
   //  const navigation = useNavigation();
     const [boton1Presionado, setBoton1Presionado] = useState(true);
     const [boton2Presionado, setBoton2Presionado] = useState(false);
@@ -24,7 +24,7 @@ const ContactoScreen = () => {
     return (
         <View style={styles.mainContainer}>
             {/* El Header del contacto */}
-            <Header iconSource={require("../imagenes/analizar/iconoHome2.png")} text="Contactos" id="contactos"/>
+            <Header iconSource={require("../imagenes/analizar/iconoHome2.png")} text="Contactos" id="contactos" navigation={navigation}/>
 
             <View style={styles.containerF}>
                 <TouchableOpacity
