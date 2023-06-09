@@ -4,12 +4,9 @@ import MapView from 'react-native-maps';
 import Geolocation from 'react-native-geolocation-service';
 import Header from '../components/header-component/header-informacion';
 import colors from '../styles/colors';
+import Select from '../components/selectTracking';
 
-const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
-]
+
 const TrackingScreen = ({ navigation }) => {
     const [region, setRegion] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -73,9 +70,7 @@ const TrackingScreen = ({ navigation }) => {
             </View>
 
             {/* Selector de opciones */}
-            <View style={styles.pickerContainer}>
-              
-            </View>
+              <Select/>
         </View>
     );
 };
@@ -95,13 +90,7 @@ const styles = StyleSheet.create({
     map: {
         flex: 1,
     },
-    pickerContainer: {
-        marginTop: 10,
-        height: 50,
-        backgroundColor: 'white',
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20
-    },
+    
     loadingIndicator: {
         flex: 1,
         alignItems: 'center',

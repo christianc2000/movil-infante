@@ -37,8 +37,7 @@ const InicioScreen = ({ navigation }) => {
                     <Opciones iconSource={require("../imagenes/analizar/iconoFacebook.png")} text="Facebook" id="facebook" />
                     <Opciones iconSource={require("../imagenes/analizar/iconoCamara2.png")} text="Cámara" id="cámara" />
                     <Opciones iconSource={require("../imagenes/analizar/iconoDescarga4.png")} text="Descarga" id="descarga" />
-                    <Opciones iconSource={require("../imagenes/analizar/iconoDocumento2.png")} text="Documento" id="documento" />
-                   
+                    <Opciones iconSource={require("../imagenes/analizar/iconoDocumento2.png")} text="Documento" id="documento" />                
                 </ScrollView>
             </View>
         </View>
