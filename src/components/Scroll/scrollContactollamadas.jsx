@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View, VirtualizedList } from 'react-native';
 import Llamada from "../contactoComponents/llamada.jsx";
+import colors from '../../styles/colors.jsx';
 
 const ScrollableContainerLlamadas = () => {
     const data = [
@@ -22,7 +23,7 @@ const ScrollableContainerLlamadas = () => {
 
     return (
         <View style={{ flex: 1 }}>
-            <Text style={{borderTopRightRadius: 20, borderTopLeftRadius: 20, height: 32, backgroundColor:'#F77333'}}/>
+            <Text style={{borderTopRightRadius: 20, borderTopLeftRadius: 20, height: 20, backgroundColor:colors.WHITE}}/>
             <View style={{ flex: 1 }}>
                 <VirtualizedList
                     data={data}

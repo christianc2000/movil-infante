@@ -9,10 +9,16 @@ const SelectComponent = () => {
 
     const options = [
         { label: 'Seleccione o salir', value: '' },
-        { label: 'Hoy', value: 'Hoy' },
-        { label: 'Ayer', value: 'Ayer' },
-        { label: 'Antes de ayer', value: 'Antes de ayer' },
-        { label: 'Ayer Antes de ayer', value: 'Ayer Antes de ayer' },
+        { label: 'Hoy', value: '10' },
+        { label: '08/06/2023', value: '9' },
+        { label: '07/06/2023', value: '8' },
+        { label: '06/06/2023', value: '7' },
+        { label: '05/06/2023', value: '6' },
+        { label: '04/06/2023', value: '5' },
+        { label: '03/06/2023', value: '4' },
+        { label: '02/06/2023', value: '3' },
+        { label: '01/06/2023', value: '2' },
+        { label: '31/05/2023', value: '1' },
         // Resto de las opciones
     ];
 
@@ -61,7 +67,7 @@ const SelectComponent = () => {
 
 const styles = StyleSheet.create({
     container: {
-        width: 150,
+        width: 200,
         height: 30,
         backgroundColor: 'black',
         borderRadius: 20,
@@ -69,7 +75,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
     },
     picker: {
-        maxWidth: 200,
+        maxWidth: 300,
         width: '100%', // Ancho del Picker al 100% del contenedor
         color: 'white', // Color del texto seleccionado
 
@@ -80,7 +86,7 @@ const styles = StyleSheet.create({
     },
     dropdownStyle: {
         backgroundColor: 'black',
-        maxWidth: 120,
+        maxWidth: 300,
         width: 120, // Ancho deseado del modal  
     },
     pickerContainer: {
