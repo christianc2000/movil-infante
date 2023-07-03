@@ -10,11 +10,16 @@ export default {
     GRAYTEXTLIGHT2: "#666666",
     YELLOW2: '#f7b733',
     YELLOW1: '#FFDF6C',
-    BLUE1: '#455a64',
+    BLUE: '#377bff',
+    BLUE1: '#00549B',
+    BLUE2: '#006FCC',
     ORANGE: '#fc4a1a',
     ORANGE1: '#ffcc80',
     ORANGE2: '#ff5204',
     ORANGE3: '#F77333',
     GREEN1: '#4abdac',
-    GREENVIVO: '#95CC29'
+    GREENVIVO: '#95CC29',
+    RED: '#D32F2F',
+    LIGHTPRIMARYCOLOR:'#90caf9',
+    LIGHTSECONDARYCOLOR:'#ffcc80',
 };

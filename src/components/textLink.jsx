@@ -11,7 +11,7 @@ const TextLink = ({ text, onPress }) => {
 
 const styles = StyleSheet.create({
     linkText: {
-        padding: 65,
+        padding: 10,
         color: 'blue',
         textDecorationLine: 'underline',
     },

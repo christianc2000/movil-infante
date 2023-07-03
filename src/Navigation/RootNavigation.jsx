@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ContactoScreen from '../screens/ContactoScreen';
 import InicioScreen from '../screens/InicioScreen';
 import TrackingScreen from '../screens/TrackingScreen';
+import LoginScreen from '../screens/LoginScreen';
 import { Button } from "react-native";
 
 const Stack = createNativeStackNavigator();
@@ -12,6 +13,11 @@ const MyStack = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+                <Stack.Screen
+                    name="Login"
+                    component={LoginScreen}
+                    options={{ headerShown: false }}
+                />
                 <Stack.Screen
                     name="Inicio"
                     component={InicioScreen}

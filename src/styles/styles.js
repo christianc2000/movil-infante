@@ -1,8 +1,9 @@
 import { StyleSheet } from 'react-native';
+import colors from './colors';
 
 //Estilos para MainScreen
 const mainStyles = StyleSheet.create({
-   
+
     container: {
         //flex: 1,
         alignItems: 'center',
@@ -15,11 +16,11 @@ const mainStyles = StyleSheet.create({
     },
 
     titleText: {
-        paddingTop: 80,
-        padding: 27,
-        fontSize: 28,
+        paddingTop: 10,
+        padding: 10,
+        fontSize: 23,
         marginTop: 20,
-        color: color.BLACKSECONDARY,
+        color: colors.BLACKSECONDARY,
         fontFamily: "Poppins"
     },
 
@@ -28,13 +29,13 @@ const mainStyles = StyleSheet.create({
         //marginTop: 10,
         marginBottom: 20,
         alignItems: 'center',
-        backgroundColor: color.BLACK,
+        backgroundColor: colors.BLACK,
         borderRadius: 60
     },
 
     btnTransparent: {
         backgroundColor: 'rgba(52, 52, 52, 0)',
-        borderColor: color.BLUE,
+        borderColor: colors.BLUE,
         width: 280,
         borderWidth: 2,
         marginBottom: 20,
@@ -44,13 +45,13 @@ const mainStyles = StyleSheet.create({
     btntxt: {
         textAlign: 'center',
         fontSize: 17,
-        color: color.WHITE,
+        color: colors.WHITE,
         paddingVertical: 15,
         fontFamily: 'Poppins-Bold',
     },
 
     txtTransparent: {
-        color: color.LIGHTPRIMARYCOLOR,
+        color: colors.LIGHTPRIMARYCOLOR,
         fontSize: 14,
         fontFamily: 'Poppins-Light',
     }
@@ -64,21 +65,67 @@ const splashStyles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: color.WHITE,
+        backgroundColor: colors.WHITE,
     }
 })
 
 //Estilos para LoginScreen
 const loginStyles = StyleSheet.create({
 
+    container: {
+        flexGrow: 1,
+        justifyContent: 'center',
+    },
+    contain_logo: {
+        flex: 0.5,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    contain_form: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    contain_footer: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     logo: {
         paddingTop: 50,
         alignItems: 'center',
+        borderRadius: 26,
     },
-    stretch: {
-        width: 350,
-        resizeMode: 'cover',
+    btnMain: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontWeight: 'bold',
+        width: 280,
+        marginTop: 40,
+        marginBottom: 20,
+        backgroundColor: colors.YELLOW2,
+        borderRadius: 18
     },
+    btnTransparent: {
+        backgroundColor: 'rgba(52, 52, 52, 0)',
+        borderColor: colors.BLUE,
+        width: 280,
+        borderWidth: 2,
+        marginBottom: 20,
+        borderRadius: 60
+    },
+    btntxt: {
+        textAlign: 'center',
+        fontSize: 17,
+        color: colors.WHITE,
+        paddingVertical: 15,
+        fontFamily: 'Poppins-Bold',
+    },
+    txtTransparent: {
+        color: colors.WHITE,
+        fontSize: 14,
+        fontFamily: 'Poppins-Light',
+    }
 })
 
 //Estilos para RegistroScreen
@@ -88,7 +135,7 @@ const registroStyles = StyleSheet.create({
         marginLeft: 0,
         marginRight: 0,
         borderWidth: 0,
-        backgroundColor: color.WHITE,
+        backgroundColor: colors.WHITE,
     },
 
     containerSocial: {
