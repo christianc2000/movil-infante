@@ -14,8 +14,10 @@ import * as Animatable from "react-native-animatable";
 import axios from "axios";
 import { loginToken } from "../utils/api/ApiManager";
 import TextLink from "../components/textLink";
+import { useNavigation } from "@react-navigation/native";
 
 export default function LoginScreen() {
+    const navigation = useNavigation();
 
     const [form, setform] = useState({
         token: '',
@@ -39,6 +41,7 @@ export default function LoginScreen() {
             .then(response => {
                 // Aquí se debe hacer el navigate a la pagina de Inicio 
                 console.log(response.data);
+                navigation.navigate('Inicio');
             })
             .catch(error => {
                 console.log(error);
